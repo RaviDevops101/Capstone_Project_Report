@@ -1,0 +1,7 @@
+---
+services:
+  my-web-app-deploy:
+    image: my-web-app1:v1
+    container_name: my-web-contain
+    ports:
+      - 80:80
