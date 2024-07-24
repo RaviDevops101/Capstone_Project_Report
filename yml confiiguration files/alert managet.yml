@@ -1,0 +1,17 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: '25688ravi@gmail.com'
+  smtp_auth_username: '25688ravi@gmail.com'
+  smtp_auth_password: 'kdaf pewm jibb iuoq'
+  smtp_require_tls: true
+
+route:
+  receiver: 'email-notifications'
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+receivers:
+- name: 'email-notifications'
+  email_configs:
+  - to: '25688ravi@gmail.com'

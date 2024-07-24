@@ -1,0 +1,6 @@
+groups:
+  - name: nginx-alerts
+    rules:
+      - alert: Capstone_Reactapp_Down
+        expr: nginx_up == 0
+        for: 1m
